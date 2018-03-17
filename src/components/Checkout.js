@@ -111,10 +111,12 @@ class DemoComponent extends React.Component {
               <Table full={this.props.full} className="table table-hover">
                 <thead>
                   <tr>
-                    <th>No.</th>
+                    <th>
+                      {this.props.full ? 'No.' : ''}
+                    </th>
                     <th scope="col">Product</th>
                     <th scope="col">
-                      {this.props.full ? 'Description' : 'Name'}
+                      {this.props.full ? 'Description' : ''}
                     </th>
                     <th scope="col">Price</th>
                     <th className="text-center" scope="col">Quantity</th>
@@ -125,7 +127,8 @@ class DemoComponent extends React.Component {
                 <tbody>
                   {this.props.list.map((item, i) =>
                     <TableRow>
-                      <th scope="row">{i+1}</th>
+                      {this.props.full ? <th scope="row">{i+1}</th> : ''}
+
                       <td>
                         <Image full={this.props.full} src={item.src} alt=""/>
                       </td>

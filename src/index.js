@@ -17,6 +17,16 @@ injectGlobal`
     ${'' /* background: rgb(190, 190, 190) !important; */}
     background: rgb(74,161,118) !important;
   }
+
+  .tesco-nav {
+    background: white;
+    transition: all 600ms;
+  }
+
+  .transparent {
+    background: rgba(255,255,255,0.95) !important;
+    transition: all 600ms;
+  }
   .hide {
     display: none;
   }

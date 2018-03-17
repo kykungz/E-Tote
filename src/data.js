@@ -35,8 +35,8 @@ export default [
     "price" : 9.0,
     "src" : "https://secure.ap-tescoassets.com/assets/TH/644/2200217048644/ShotType1_328x328.jpg"
   }, {
-    "name" : "เทสโก้ไข่ไก่สด เบอร์ 3-4 30 ฟอง ",
-    "description" : "1 แพ็ค",
+    "name" : "เทสโก้ไข่ไก่สด",
+    "description" : "เบอร์ 3 1 แพ็ค (30 ฟอง)",
     "price" : 73.0,
     "src" : "https://secure.ap-tescoassets.com/assets/TH/074/8858893916074/ShotType1_328x328.jpg"
   }, {
@@ -55,28 +55,28 @@ export default [
     "price" : 97.0,
     "src" : "https://secure.ap-tescoassets.com/assets/TH/817/212817/ShotType1_328x328.jpg"
   }, {
-    "name" : "ทิพรส น้ำปลาแท้ 700 มล. ",
-    "description" : "1 ขวด",
+    "name" : "ทิพรส น้ำปลาแท้ ",
+    "description" : "1 ขวด (700 มล.)",
     "price" : 27.5,
     "src" : "https://secure.ap-tescoassets.com/assets/TH/552/8850545777552/ShotType1_328x328.jpg"
   }, {
-    "name" : "โอลีน น้ำมันปาล์ม 1000 มล. ",
-    "description" : "1 ขวด",
+    "name" : "โอลีน น้ำมันปาล์ม ",
+    "description" : "1 ขวด (1000 มล.)",
     "price" : 35.0,
     "src" : "https://secure.ap-tescoassets.com/assets/TH/031/8850635001031/ShotType1_328x328.jpg"
   }, {
-    "name" : "วังขนาย น้ำตาลทรายขาวบริสุทธิ์ 1 กก. ",
-    "description" : "1 ถุง",
+    "name" : "วังขนาย น้ำตาลทรายขาวบริสุทธิ์ ",
+    "description" : "1 ถุง (1 กก.)",
     "price" : 21.5,
     "src" : "https://secure.ap-tescoassets.com/assets/TH/058/8850352000058/ShotType1_328x328.jpg"
   }, {
-    "name" : "เด็กสมบูรณ์ ซีอิ๋วขาวสูตร 1 700 มล.",
-    "description" : "1 ขวด",
+    "name" : "เด็กสมบูรณ์ ซีอิ๋วขาวสูตร 1",
+    "description" : "1 ขวด (700 มล.)",
     "price" : 39.5,
     "src" : "https://secure.ap-tescoassets.com/assets/TH/025/8850206011025/ShotType1_328x328.jpg"
   }, {
-    "name" : "เด็กสมบูรณ์ ซอสหอยนางรมสูตรเข้มข้น 800 มล. ",
-    "description" : "1 ขวด",
+    "name" : "เด็กสมบูรณ์ ซอสหอยนางรมสูตรเข้มข้น ",
+    "description" : "1 ขวด (800 มล.)",
     "price" : 38.0,
     "src" : "https://secure.ap-tescoassets.com/assets/TH/512/8850206117512/ShotType1_328x328.jpg"
   }, {
@@ -85,8 +85,8 @@ export default [
     "price" : 239.0,
     "src" : "https://secure.ap-tescoassets.com/assets/TH/475/215475/ShotType1_328x328.jpg"
   }, {
-    "name" : "เฮอริเทจ คีนัว 250 กรัม",
-    "description" : "1 ห่อ",
+    "name" : "เฮอริเทจ คีนัว",
+    "description" : "1 ห่อ (250 กรัม)",
     "price" : 95.0,
     "src" : "https://secure.ap-tescoassets.com/assets/TH/229/8850096142229/ShotType1_328x328.jpg"
   }, {
@@ -95,7 +95,7 @@ export default [
     "price" : 69.0,
     "src" : "https://secure.ap-tescoassets.com/assets/TH/270/215270/ShotType1_328x328.jpg"
   }, {
-    "name" : "กระเทียม 1 แพ็ค",
+    "name" : "กระเทียม",
     "description" : "1 แพ็ค",
     "price" : 20.0,
     "src" : "https://secure.ap-tescoassets.com/assets/TH/185/2302001455185/ShotType1_328x328.jpg"
@@ -110,12 +110,12 @@ export default [
     "price" : 58.0,
     "src" : "https://secure.ap-tescoassets.com/assets/TH/839/211839/ShotType1_328x328.jpg"
   }, {
-    "name" : "ภูเขาทอง น้ำซอสถั่วเหลืองปรุงรส ฝาเขียว 1 ลิตร",
-    "description" : "1 ขวด",
+    "name" : "ภูเขาทอง น้ำซอสถั่วเหลืองปรุงรส ฝาเขียว",
+    "description" : "1 ขวด (1 ลิตร)",
     "price" : 44.0,
     "src" : "https://secure.ap-tescoassets.com/assets/TH/235/8851954101235/ShotType1_328x328.jpg"
   }, {
-    "name" : "เทสโก้ พริกขี้หนูสวน 1 แพ็ค",
+    "name" : "เทสโก้ พริกขี้หนูสวน",
     "description" : "1 แพ็ค",
     "price" : 8.0,
     "src" : "https://secure.ap-tescoassets.com/assets/TH/505/2200217013505/ShotType1_328x328.jpg"

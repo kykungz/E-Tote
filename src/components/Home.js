@@ -6,6 +6,10 @@ import { Link } from 'react-router-dom'
 import * as cartActions from '../redux/modules/counter'
 import data from '../data'
 
+const ABC = styled.div`
+  max-height: 400px;
+  overflow-y: scroll;
+`
 const Grid = styled.div`
   display: grid;
   ${'' /* grid-template-columns: repeat(4, 1fr); */}
@@ -30,9 +34,16 @@ const Name = styled.h5`
 `
 
 const Cart = styled.div`
+  position: fixed;
+  ${'' /* right: 0; */}
+  top: 90px;
+  width: 420px;
+`
+
+const A = styled.div`
   position: absolute;
   right: 0;
-  top: 0;
+  top: 20px;
   width: 420px;
 `
 
@@ -99,16 +110,20 @@ class DemoComponent extends React.Component {
               </Card>
             ))}
           </Grid>
-          <Cart className="pl-4">
-            <Checkout full={false}/>
-            <Link to='/checkout' style={{textDecoration:'none', display: 'block', height: '100%'}}>
-              <button className="btn btn-primary btn-block">
-                <White>
-                    View Tote
-                </White>
-              </button>
-            </Link>
-          </Cart>
+          <A>
+            <Cart className="pl-4">
+              <ABC>
+                <Checkout full={false}/>
+              </ABC>
+              <Link to='/checkout' style={{textDecoration:'none', display: 'block', height: '100%'}}>
+                <button className="btn btn-primary btn-block">
+                  <White>
+                      View Tote ( {this.props.list.length} )
+                  </White>
+                </button>
+              </Link>
+            </Cart>
+          </A>
         </Flex>
       </div>
     )

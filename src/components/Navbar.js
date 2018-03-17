@@ -2,7 +2,9 @@ import React from 'react'
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 
-const Nav = styled.nav`
+const Nav = styled.nav.attrs({
+  id: 'nav'
+})`
   ${'' /* background: #19212b !important; */}
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 `
@@ -19,7 +21,16 @@ const Hamburger = styled.button`
 class DemoComponent extends React.Component {
   state = {}
 
-  componentDidMount = () => {} // fetch data here
+  componentDidMount = () => {
+    window.addEventListener('scroll', () => {
+      console.log(window.scrollY)
+      if (window.scrollY > 200) {
+        document.getElementById('nav').classList.add('transparent')
+      } else {
+        document.getElementById('nav').classList.remove('transparent')
+      }
+    })
+  }
 
   componentWillUnmount = () => {}
 
@@ -29,7 +40,7 @@ class DemoComponent extends React.Component {
 
   render() {
     return (
-      <Nav className="px-4 navbar navbar-expand-lg bg-white">
+      <Nav className="px-4 navbar sticky-top navbar-expand-lg tesco-nav">
         <Link class="navbar-brand" to='/'>
           <img src="https://logos-download.com/wp-content/uploads/2016/06/Tesco_Lotus_logo.png" height="40" alt="" />
         </Link>
