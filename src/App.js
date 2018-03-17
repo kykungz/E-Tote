@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter as Router } from 'react-router-dom'
+import { HashRouter as Router } from 'react-router-dom'
 import RouterView from './router'
 import Navbar from './components/Navbar'
 import Bottombar from './components/Bottombar'

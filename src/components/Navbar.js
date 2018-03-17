@@ -30,26 +30,26 @@ class DemoComponent extends React.Component {
   render() {
     return (
       <Nav className="px-4 navbar navbar-expand-lg bg-white">
-        <Link class="navbar-brand" to={process.env.PUBLIC_URL}>
+        <Link class="navbar-brand" to='/'>
           <img src="https://logos-download.com/wp-content/uploads/2016/06/Tesco_Lotus_logo.png" height="40" alt="" />
         </Link>
         <div className="collapse navbar-collapse" id="navbarText">
           <span className="navbar-text ml-auto">
             <ul class="navbar-nav mr-auto">
               <li class="nav-item">
-                <Link class="nav-link" to={process.env.PUBLIC_URL}>All Items</Link>
+                <Link class="nav-link" to='/'>All Items</Link>
               </li>
               <li class="nav-item">
-                <Link class="nav-link" to={process.env.PUBLIC_URL}>Meat</Link>
+                <Link class="nav-link" to='/'>Meat</Link>
               </li>
               <li class="nav-item">
-                <Link class="nav-link" to={process.env.PUBLIC_URL}>Vegetables</Link>
+                <Link class="nav-link" to='/'>Vegetables</Link>
               </li>
               <li class="nav-item">
-                <Link class="nav-link" to={process.env.PUBLIC_URL}>Fruits</Link>
+                <Link class="nav-link" to='/'>Fruits</Link>
               </li>
               <li class="nav-item">
-                <Link class="nav-link" to={process.env.PUBLIC_URL}>Drinks</Link>
+                <Link class="nav-link" to='/'>Drinks</Link>
               </li>
               <li class="nav-item">
                 <span class="nav-link disabled" href="#">สวัสดี, Kongpon</span>

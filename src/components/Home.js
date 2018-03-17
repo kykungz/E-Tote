@@ -101,7 +101,7 @@ class DemoComponent extends React.Component {
           </Grid>
           <Cart className="pl-4">
             <Checkout full={false}/>
-            <Link to={process.env.PUBLIC_URL + '/checkout'} style={{textDecoration:'none', display: 'block', height: '100%'}}>
+            <Link to='/checkout' style={{textDecoration:'none', display: 'block', height: '100%'}}>
               <button className="btn btn-primary btn-block">
                 <White>
                     View Tote
