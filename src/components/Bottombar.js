@@ -94,7 +94,9 @@ class DemoComponent extends React.Component {
           <Button onClick={this.generateLink} type="button" className='px-4 btn btn-success' data-toggle="modal" data-target="#exampleModal">
             Share
           </Button>
-          <h5 className="pt-2 text-white float-right">Total: $400</h5>
+          <h5 className="pt-2 text-white float-right">Total: ${
+            this.props.list.reduce((acc, cur) => acc + parseInt(cur.price * cur.amount), 0)
+          }</h5>
         </Nav>
       </div>
     )
