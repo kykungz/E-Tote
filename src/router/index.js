@@ -9,20 +9,20 @@ import CheckoutPage from '../components/CheckoutPage'
 
 const routes = [
   {
-    path: '/',
+    path: process.env.PUBLIC_URL + '/',
     exact: true,
     component: Home
   },
   {
-    path: '/checkout/:list',
+    path: process.env.PUBLIC_URL + '/checkout/:list',
     component: CheckoutPage
   },
   {
-    path: '/checkout/',
+    path: process.env.PUBLIC_URL + '/checkout/',
     component: CheckoutPage
   },
   {
-    path: '/route-component/:number', // URL params
+    path: process.env.PUBLIC_URL + '/route-component/:number', // URL params
     component: DemoRouteComponent
   }
 ]

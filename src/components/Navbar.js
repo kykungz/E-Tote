@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom'
 
 const Nav = styled.nav`
   ${'' /* background: #19212b !important; */}
-  background: var(--danger) !important;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 `
 
@@ -38,19 +37,19 @@ class DemoComponent extends React.Component {
           <span className="navbar-text ml-auto">
             <ul class="navbar-nav mr-auto">
               <li class="nav-item">
-                <Link class="nav-link" to='/'>All Items</Link>
+                <Link class="nav-link" to={process.env.PUBLIC_URL}>All Items</Link>
               </li>
               <li class="nav-item">
-                <Link class="nav-link" to='/'>Meat</Link>
+                <Link class="nav-link" to={process.env.PUBLIC_URL}>Meat</Link>
               </li>
               <li class="nav-item">
-                <Link class="nav-link" to='/'>Vegetables</Link>
+                <Link class="nav-link" to={process.env.PUBLIC_URL}>Vegetables</Link>
               </li>
               <li class="nav-item">
-                <Link class="nav-link" to='/'>Fruits</Link>
+                <Link class="nav-link" to={process.env.PUBLIC_URL}>Fruits</Link>
               </li>
               <li class="nav-item">
-                <Link class="nav-link" to='/'>Drinks</Link>
+                <Link class="nav-link" to={process.env.PUBLIC_URL}>Drinks</Link>
               </li>
               <li class="nav-item">
                 <span class="nav-link disabled" href="#">สวัสดี, Kongpon</span>
