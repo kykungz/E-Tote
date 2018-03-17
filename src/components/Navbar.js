@@ -30,9 +30,9 @@ class DemoComponent extends React.Component {
   render() {
     return (
       <Nav className="px-4 navbar navbar-expand-lg bg-white">
-        <a class="navbar-brand" href="/">
+        <Link class="navbar-brand" to={process.env.PUBLIC_URL}>
           <img src="https://logos-download.com/wp-content/uploads/2016/06/Tesco_Lotus_logo.png" height="40" alt="" />
-        </a>
+        </Link>
         <div className="collapse navbar-collapse" id="navbarText">
           <span className="navbar-text ml-auto">
             <ul class="navbar-nav mr-auto">
