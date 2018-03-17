@@ -42,8 +42,12 @@ class DemoComponent extends React.Component {
   }
 
   generateLink = () => {
-    console.log(this.props.list)
-    const link = window.location.origin + process.env.PUBLIC_URL +'/#/checkout/' + this.props.list.map((item, i) => `${item.index}x${item.amount}`).join('-')
+    let link
+    if (process.env.NODE_ENV === 'production') {
+      link = window.location.origin +'ExpressPacker/#/checkout/' + this.props.list.map((item, i) => `${item.index}x${item.amount}`).join('-')
+    } else {
+      link = window.location.origin +'/#/checkout/' + this.props.list.map((item, i) => `${item.index}x${item.amount}`).join('-')
+    }
     this.setState({ link })
   }
 
