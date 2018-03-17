@@ -8,7 +8,8 @@ import data from '../data'
 
 const Grid = styled.div`
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  ${'' /* grid-template-columns: repeat(4, 1fr); */}
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   grid-gap: 1em;
   height: auto;
   ${'' /* padding: 1em; */}
@@ -72,9 +73,7 @@ const Card = styled.div`
 class DemoComponent extends React.Component {
 
   componentDidMount = () => {
-    console.log(JSON.parse(localStorage.list))
-    console.log(this.props.list)
-    this.props.setCart(JSON.parse(localStorage.list) || [])
+    this.props.setCart(JSON.parse(localStorage.getItem('list')) || [])
   }
 
   componentWillUnmount = () => {}
