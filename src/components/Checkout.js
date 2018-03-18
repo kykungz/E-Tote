@@ -108,7 +108,7 @@ class DemoComponent extends React.Component {
           <div className="table-responsive">
 
             <TableWrapper>
-              <Table full={this.props.full} className="table table-hover">
+              <Table full={this.props.full} className="table">
                 <thead>
                   <tr>
                     <th>
