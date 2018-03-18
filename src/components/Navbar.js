@@ -7,6 +7,10 @@ const Nav = styled.nav.attrs({
 })`
   ${'' /* background: #19212b !important; */}
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  border-top: thick solid hsl(150, 43%, 36%);
+  a {
+    color: black !important;
+  }
 `
 
 const Hamburger = styled.button`
@@ -46,7 +50,7 @@ class DemoComponent extends React.Component {
         </Link>
         <div className="collapse navbar-collapse" id="navbarText">
           <span className="navbar-text ml-auto">
-            <ul class="navbar-nav mr-auto">
+            <ul class="text-black navbar-nav mr-auto">
               <li class="nav-item">
                 <Link class="nav-link" to='/'>All Items</Link>
               </li>
@@ -63,7 +67,10 @@ class DemoComponent extends React.Component {
                 <Link class="nav-link" to='/'>Drinks</Link>
               </li>
               <li class="nav-item">
-                <span class="nav-link disabled" href="#">สวัสดี, Kongpon</span>
+                <Link class="nav-link" to='/'>Cart</Link>
+              </li>
+              <li class="nav-item">
+                <span class="nav-link disabled" href="#">Mae Ploy</span>
               </li>
             </ul>
           </span>

@@ -17,11 +17,12 @@ const Grid = styled.div`
   grid-gap: 1em;
   height: auto;
   ${'' /* padding: 1em; */}
-  width: calc(100vw - 420px - 1.5em);
+  width: calc(100vw - 420px - 3em);
 `
 const Name = styled.h5`
   position: relative;
   padding-top: .5em;
+  font-family: 'Kanit', serif !important;
   &::after {
     position: absolute;
     bottom: -.3em;
@@ -29,7 +30,8 @@ const Name = styled.h5`
     content: "";
     width: 100%;
     height: 4px;
-    background: var(--danger);
+    ${'' /* background: var(--danger); */}
+    background: brown;
   }
 `
 
@@ -38,6 +40,7 @@ const Cart = styled.div`
   ${'' /* right: 0; */}
   top: 90px;
   width: 420px;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
 `
 
 const A = styled.div`
@@ -74,11 +77,17 @@ const White = styled.div`
 `
 
 const Card = styled.div`
-  background: rgba(0, 0, 0, 0.3);
+  ${'' /* background: rgba(0, 0, 0, 0.3); */}
+  ${'' /* background: rgb(74,161,118) !important; */}
+  background: white;
   padding: .5em;
   box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
-  color: white;
+  ${'' /* color: white; */}
   font-family: 'Montserrat', serif;
+  & > button {
+    background: rgb(74,161,118) !important;
+    color: white;
+  }
 `
 
 class DemoComponent extends React.Component {
@@ -104,21 +113,23 @@ class DemoComponent extends React.Component {
                 <Name>{item.name}</Name>
                 <div>{item.description}</div>
                 <div><b>Price:{' '}</b>{item.price} THB</div>
-                <button  onClick={() => { this.add(i) }} className="pt-2 btn btn-danger btn-block">
-                  Add to cart
+                <button  onClick={() => { this.add(i) }} className="pt-2 btn btn-block">
+                  {/* Add to cart */}
+                  Add to cart<i style={{transform: 'scale(1.3)'}} class="pl-2 fa fa-cart-plus" aria-hidden="true"></i>
+
                 </button>
               </Card>
             ))}
           </Grid>
           <A>
-            <Cart className="pl-4">
+            <Cart className="">
               <ABC>
                 <Checkout full={false}/>
               </ABC>
               <Link to='/checkout' style={{textDecoration:'none', display: 'block', height: '100%'}}>
-                <button className="btn btn-primary btn-block">
+                <button className="btn btn-success btn-block">
                   <White>
-                      View Tote ( {this.props.list.length} )
+                      View Cart ( {this.props.list.length} )
                   </White>
                 </button>
               </Link>

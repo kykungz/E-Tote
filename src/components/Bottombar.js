@@ -118,8 +118,9 @@ class DemoComponent extends React.Component {
           </div>
         </div>
         <Nav>
-
-          <Button className='float-right px-4 btn btn-danger'>Checkout</Button>
+          <a href="https://shoponline.tescolotus.com/groceries/th-TH/checkout/payment-options">
+            <Button className='float-right px-4 btn btn-danger'>Checkout</Button>
+          </a>
           <Button onClick={this.generateLink} type="button" className='px-4 btn btn-success' data-toggle="modal" data-target="#exampleModal">
             Share
           </Button>

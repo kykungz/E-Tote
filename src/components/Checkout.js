@@ -22,7 +22,7 @@ const TableWrapper = styled.div`
   ${'' /* margin-bottom: 4em !important; */}
   max-width: 900px;
   ${props => props.full && 'padding: 2em;'}
-  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4);
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
   border-radius: 2px;
   background: rgb(0,0,0,0.1) !important;
 `

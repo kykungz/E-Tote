@@ -15,7 +15,8 @@ injectGlobal`
     ${'' /* background: #f5fffd !important; */}
     background: whitesmoke !important;
     ${'' /* background: rgb(190, 190, 190) !important; */}
-    background: rgb(74,161,118) !important;
+    ${'' /* background: rgb(74,161,118) !important; */}
+    background: hsl(0, 0%, 91%) !important;
   }
 
   .tesco-nav {

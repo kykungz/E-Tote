@@ -30,7 +30,7 @@ export default [
     "price" : 12.0,
     "src" : "https://secure.ap-tescoassets.com/assets/TH/111/2200232516111/ShotType1_328x328.jpg"
   }, {
-    "name" : "เทสโก้ ข้าวโพดอ่อนปอกเปลือก ",
+    "name" : "ข้าวโพดอ่อนปอกเปลือก ",
     "description" : "1 แพ็ค",
     "price" : 9.0,
     "src" : "https://secure.ap-tescoassets.com/assets/TH/644/2200217048644/ShotType1_328x328.jpg"
@@ -60,10 +60,10 @@ export default [
     "price" : 27.5,
     "src" : "https://secure.ap-tescoassets.com/assets/TH/552/8850545777552/ShotType1_328x328.jpg"
   }, {
-    "name" : "โอลีน น้ำมันปาล์ม ",
-    "description" : "1 ขวด (1000 มล.)",
-    "price" : 35.0,
-    "src" : "https://secure.ap-tescoassets.com/assets/TH/031/8850635001031/ShotType1_328x328.jpg"
+    "name" : "กุ้งขาวแวนาไมค์ ขนาดใหญ่",
+    "description" : "1 กิโลกรัม",
+    "price" : 239.0,
+    "src" : "https://secure.ap-tescoassets.com/assets/TH/475/215475/ShotType1_328x328.jpg"
   }, {
     "name" : "วังขนาย น้ำตาลทรายขาวบริสุทธิ์ ",
     "description" : "1 ถุง (1 กก.)",
@@ -80,10 +80,10 @@ export default [
     "price" : 38.0,
     "src" : "https://secure.ap-tescoassets.com/assets/TH/512/8850206117512/ShotType1_328x328.jpg"
   }, {
-    "name" : "กุ้งขาวแวนาไมค์ ขนาดใหญ่",
-    "description" : "1 กิโลกรัม",
-    "price" : 239.0,
-    "src" : "https://secure.ap-tescoassets.com/assets/TH/475/215475/ShotType1_328x328.jpg"
+    "name" : "โอลีน น้ำมันปาล์ม ",
+    "description" : "1 ขวด (1000 มล.)",
+    "price" : 35.0,
+    "src" : "https://secure.ap-tescoassets.com/assets/TH/031/8850635001031/ShotType1_328x328.jpg"
   }, {
     "name" : "เฮอริเทจ คีนัว",
     "description" : "1 ห่อ (250 กรัม)",
@@ -105,15 +105,15 @@ export default [
     "price" : 16.0,
     "src" : "https://secure.ap-tescoassets.com/assets/TH/843/215843/ShotType1_328x328.jpg"
   }, {
-    "name" : "อกไก่",
-    "description" : "1 กิโลกรัม",
-    "price" : 58.0,
-    "src" : "https://secure.ap-tescoassets.com/assets/TH/839/211839/ShotType1_328x328.jpg"
-  }, {
     "name" : "ภูเขาทอง น้ำซอสถั่วเหลืองปรุงรส ฝาเขียว",
     "description" : "1 ขวด (1 ลิตร)",
     "price" : 44.0,
     "src" : "https://secure.ap-tescoassets.com/assets/TH/235/8851954101235/ShotType1_328x328.jpg"
+  }, {
+    "name" : "อกไก่",
+    "description" : "1 กิโลกรัม",
+    "price" : 58.0,
+    "src" : "https://secure.ap-tescoassets.com/assets/TH/839/211839/ShotType1_328x328.jpg"
   }, {
     "name" : "เทสโก้ พริกขี้หนูสวน",
     "description" : "1 แพ็ค",

@@ -14,8 +14,10 @@ const Padding = styled.div`
 `
 
 class DemoComponent extends React.Component {
+  state = {
+    loading: true
+  }
   componentDidMount = () => {
-    console.log(this.props.match)
 
     if (this.props.match.params.list) { // เข้าผ่านลิ้ง
       // แบบเก่า
@@ -26,8 +28,7 @@ class DemoComponent extends React.Component {
       // })
       // this.props.setCart(list)
       firebase.database().ref('/tesco/' + this.props.match.params.list).once('value').then(snapshot => {
-        this.props.setCart(snapshot.val().list)
-        console.log(snapshot.val().list)
+        this.props.setCart(snapshot.val().list || [])
       })
     } else { // เข้ามาเอง
       console.log('hi')
