@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import {connect} from 'react-redux'
-
+import firebase from '../firebase'
 import * as cartActions from '../redux/modules/counter'
 
 const Nav = styled.nav.attrs({
@@ -28,7 +28,8 @@ const Button = styled.button`
 class DemoComponent extends React.Component {
   state = {
     copied: false,
-    link: ''
+    link: '',
+    menuName: ''
   }
 
   componentDidMount = () => {}
@@ -49,8 +50,28 @@ class DemoComponent extends React.Component {
       link = window.location.origin +'/#/checkout/' + this.props.list.map((item, i) => `${item.index}x${item.amount}`).join('-')
     }
     this.setState({ link })
+    this.send()
   }
 
+  handleChange = (e) => {
+    const value = e.target.value
+    this.setState({
+      menuName: value
+    })
+  }
+  send = () => {
+    const key = firebase.database().ref('/tesco').push({
+      list: this.props.list
+    })
+    let link
+    if (process.env.NODE_ENV === 'production') {
+      link = window.location.origin +'/ExpressPacker/#/checkout/' + key.getKey()
+    } else {
+      link = window.location.origin +'/#/checkout/' + key.getKey()
+    }
+    this.setState({ menuName: link })
+    this.setState({ link })
+  }
   render() {
     return (
       <div>
@@ -66,6 +87,14 @@ class DemoComponent extends React.Component {
               <div className="modal-body d-flex justify-content-center align-items-center">
                 <div className="w-100 text-center">
                   <h4>Your e-Tote is ready!</h4>
+                  {/* <div class="input-group text-center mb-3">
+                    <input  style={{background: 'lightgray'}} id="firebase-key" type="text" class="form-control" value={this.state.menuName} readonly />
+                    <div class="input-group-append">
+                      <button onClick={this.copy} class="btn btn-secondary" type="button">
+                        <i class="fa fa-clipboard" aria-hidden="true"></i>
+                      </button>
+                    </div>
+                  </div> */}
                   <div class="input-group mb-3">
                     <input style={{background: 'lightgray'}} id="aff-link" type="text" class="form-control" value={this.state.link} readonly />
                     <div class="input-group-append">
@@ -94,9 +123,9 @@ class DemoComponent extends React.Component {
           <Button onClick={this.generateLink} type="button" className='px-4 btn btn-success' data-toggle="modal" data-target="#exampleModal">
             Share
           </Button>
-          <h5 className="pt-2 text-white float-right">Total: ${
-            this.props.list.reduce((acc, cur) => acc + parseInt(cur.price * cur.amount), 0)
-          }</h5>
+          <h5 className="pt-2 text-white float-right">Total: {
+            this.props.list.reduce((acc, cur) => acc + parseFloat(cur.price * cur.amount), 0).toFixed(2)
+          } THB</h5>
         </Nav>
       </div>
     )

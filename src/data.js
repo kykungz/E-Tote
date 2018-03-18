@@ -37,7 +37,7 @@ export default [
   }, {
     "name" : "เทสโก้ไข่ไก่สด",
     "description" : "เบอร์ 3 1 แพ็ค (30 ฟอง)",
-    "price" : 73.0,
+    "price" : 73.5,
     "src" : "https://secure.ap-tescoassets.com/assets/TH/074/8858893916074/ShotType1_328x328.jpg"
   }, {
     "name" : "สะโพกหมู ",

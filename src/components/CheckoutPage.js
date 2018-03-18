@@ -5,6 +5,7 @@ import Bottombar from './Bottombar'
 import data from '../data'
 import {connect} from 'react-redux'
 import * as cartActions from '../redux/modules/counter'
+import firebase from '../firebase'
 
 const Padding = styled.div`
   padding: 1em;
@@ -17,12 +18,17 @@ class DemoComponent extends React.Component {
     console.log(this.props.match)
 
     if (this.props.match.params.list) { // เข้าผ่านลิ้ง
-      const list = this.props.match.params.list.split('-').map((item, i) => {
-        const index = item.split('x')[0]
-        const amount = parseInt(item.split('x')[1])
-        return { index, ...data[index], amount }
+      // แบบเก่า
+      // const list = this.props.match.params.list.split('-').map((item, i) => {
+      //   const index = item.split('x')[0]
+      //   const amount = parseInt(item.split('x')[1])
+      //   return { index, ...data[index], amount }
+      // })
+      // this.props.setCart(list)
+      firebase.database().ref('/tesco/' + this.props.match.params.list).once('value').then(snapshot => {
+        this.props.setCart(snapshot.val().list)
+        console.log(snapshot.val().list)
       })
-      this.props.setCart(list)
     } else { // เข้ามาเอง
       console.log('hi')
       this.props.setCart(JSON.parse(localStorage.list) || [])

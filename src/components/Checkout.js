@@ -142,14 +142,14 @@ class DemoComponent extends React.Component {
                             </span>
                         }
                       </td>
-                      <td>${item.price}</td>
+                      <td>{item.price} THB</td>
                       <td>
                         <div className="input-group-sm">
                           <input style={{minWidth: '60px'}} type="number" class="form-control text-center" onChange={(e) => { this.handleChange(e, i) }} value={item.amount}/>
                         </div>
                       </td>
-                      <td>${ parseInt(item.price) * parseInt(item.amount) }</td>
-                      <td className="actions" data-th="">
+                      <td>{ (parseFloat(item.price) * parseFloat(item.amount)).toFixed(2) } THB</td>
+                      <td className="actions">
                         <button onClick={() => {this.removeItem(i)}} class="btn btn-danger btn-sm"><i class="fa fa-trash-o"></i></button>
                       </td>
                     </TableRow>

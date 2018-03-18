@@ -103,7 +103,7 @@ class DemoComponent extends React.Component {
                 <img className="img-fluid" src={item.src} alt=""/>
                 <Name>{item.name}</Name>
                 <div>{item.description}</div>
-                <div><b>Price:{' '}</b>{item.price}</div>
+                <div><b>Price:{' '}</b>{item.price} THB</div>
                 <button  onClick={() => { this.add(i) }} className="pt-2 btn btn-danger btn-block">
                   Add to cart
                 </button>

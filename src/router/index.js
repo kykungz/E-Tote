@@ -15,11 +15,13 @@ const routes = [
   },
   {
     path: '/checkout/:list',
-    component: CheckoutPage
+    component: CheckoutPage,
+    exact: true
   },
   {
     path: '/checkout/',
-    component: CheckoutPage
+    component: CheckoutPage,
+    exact: true
   },
   {
     path: '/route-component/:number', // URL params
