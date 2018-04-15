@@ -65,7 +65,7 @@ class DemoComponent extends React.Component {
     })
     let link
     if (process.env.NODE_ENV === 'production') {
-      link = window.location.origin +'/ExpressPacker/#/checkout/' + key.getKey()
+      link = window.location.origin +'/E-Tote/#/checkout/' + key.getKey()
     } else {
       link = window.location.origin +'/#/checkout/' + key.getKey()
     }
